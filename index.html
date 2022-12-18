@@ -60,23 +60,39 @@
         </div>
   
         <div class="contacts">
-        <ul class="header-list items">
-          <li class="header-list__contact">
-            <a class="header-list__tel link" href="tel:+380961111111"
-              ><svg class="header-list__icon--smartphone contact-icon" width="10" height="16">
-                <use href="./images/icons.svg#icon-smartphone"></use></svg
-              >+38 096 111 11 11</a
-            >
-          </li>
-          <li class="header-list__contact">
-            <a class="header-list__mail link" href="mailto:ingo@devstudio.com"
-              ><svg class="header-list__icon--email contact-icon" width="16" height="12">
-                <use href="./images/icons.svg#icon-envelope"></use></svg
-              >info@devstudio.com</a
-            >
-          </li>
-        </ul>
-      </div>
+          <ul class="header-list items">
+            
+            <li class="header-list__contact">
+              <a class="header-list__mail link" href="mailto:ingo@devstudio.com"
+                ><svg class="header-list__icon--email contact-icon" width="16" height="12">
+                  <use href="./images/icons.svg#icon-envelope"></use></svg
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="header-list__contact">
+              <a class="header-list__tel link" href="tel:+380961111111"
+                ><svg class="header-list__icon--smartphone contact-icon" width="10" height="16">
+                  <use href="./images/icons.svg#icon-smartphone"></use></svg
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul >
+            <ul class="social-mobile items">
+            <li class="mobile-socials__item item">
+              <a class="social__link link" href="https://www.instagram.com/">Instagram</a>
+            </li>
+            <li class="mobile-socials__item">
+              <a class="social__link link" href="https://twitter.com/">Twitter</a>
+            </li>
+            <li class="mobile-socials__item">
+              <a class="social__link link" href="https://www.facebook.com/">Facebook</a>
+            </li>
+            <li class="mobile-socials__item">
+              <a class="social__link link" href="https://www.linkedin.com/">LinkedIn</a>
+            </li>
+
+          </ul>
+        </div>
       </div>
     </nav>
   </header>
@@ -161,7 +177,9 @@
               </div>
               <img
                 class="main-portfolio__img"
-                src="images/box1.jpg"
+                srcset="./images/main-portfolio/img1x_d_1.jpg 1x, 
+                        ./images/main-portfolio/img2x_d_1.jpg 2x"
+                src="./images/main-portfolio/img1x_d_1.jpg"
                 alt="написання коду"
                 width="370"
               />
@@ -172,7 +190,9 @@
               </div>
               <img
                 class="main-portfolio__img"
-                src="images/box2.jpg"
+                srcset="./images/main-portfolio/img1x_d_2.jpg 1x, 
+                        ./images/main-portfolio/img2x_d_2.jpg 2x"
+                src="./images/main-portfolio/img1x_d_2.jpg"
                 alt="тестування додатку"
                 width="370"
               />
@@ -183,7 +203,9 @@
               </div>
               <img
                 class="main-portfolio__img"
-                src="images/box3.jpg"
+                srcset="./images/main-portfolio/img1x_d_3.jpg 1x, 
+                        ./images/main-portfolio/img2x_d_3.jpg 2x"
+                src="./images/main-portfolio/img1x_d_3.jpg"
                 alt="дизайн"
                 width="370"
               />
@@ -200,9 +222,18 @@
             <li class="team__item item">
               <img
                 class="team__img"
-                src="images/teamcard1.jpg"
+                srcset="./images/team/product_designer_450_m.jpg 450w, 
+                        ./images/team/product_designer_900_m.jpg 900w, 
+                        ./images/team/product_designer_354_t.jpg 354w, 
+                        ./images/team/product_designer_708_t.jpg 708w,
+                        ./images/team/product_designer_270_d.jpg 270w, 
+                        ./images/team/product_designer_540_d.jpg 540w"
+                sizes="(min-width: 1200px) 270px, 
+                       (min-width: 768px) 354px, 
+                       (min-width: 480px) 450px, 100vw"
+                src="./images/team/product_designer_450_m.jpg"
                 alt="Product Designer"
-                width="270"
+                width="450"
               />
               <div class="team-profile">
                 <h3 class="team-profile__subtitle">Ігор Дем'яненко</h3>
@@ -240,9 +271,18 @@
             <li class="team__item item">
               <img
                 class="team__img"
-                src="images/teamcard2.jpg"
+                srcset="./images/team/frontend_dev_450_m.jpg 450w, 
+                        ./images/team/frontend_dev_900_m.jpg 900w, 
+                        ./images/team/frontend_dev_354_t.jpg 354w, 
+                        ./images/team/frontend_dev_708_t.jpg 708w,
+                        ./images/team/frontend_dev_270_d.jpg 270w, 
+                        ./images/team/frontend_dev_540_d.jpg 540w"
+                 sizes="(min-width: 1200px) 270px, 
+                        (min-width: 768px) 354px, 
+                        (min-width: 480px) 450px, 100vw"
+                src="./images/team/frontend_dev_450_m.jpg"
                 alt="Frontend Developer"
-                width="270"
+                width="450"
               />
               <div class="team-profile">
                 <h3 class="team-profile__subtitle">Ольга Рєпіна</h3>
@@ -280,9 +320,18 @@
             <li class="team__item item">
               <img
                 class="team__img"
-                src="images/teamcard3.jpg"
+                srcset="./images/team/marketing_450_m.jpg 450w, 
+                        ./images/team/marketing_900_m.jpg 900w, 
+                        ./images/team/marketing_354_t.jpg 354w, 
+                        ./images/team/marketing_708_t.jpg 708w,
+                        ./images/team/marketing_270_d.jpg 270w, 
+                        ./images/team/marketing_540_d.jpg 540w"
+                 sizes="(min-width: 1200px) 270px, 
+                        (min-width: 768px) 354px, 
+                        (min-width: 480px) 450px, 100vw"
+                 src="./images/team/marketing_450_m.jpg"
                 alt="Marketing"
-                width="270"
+                width="450"
               />
               <div class="team-profile">
                 <h3 class="team-profile__subtitle">Микола Тарасов</h3>
@@ -320,9 +369,18 @@
             <li class="team__item item">
               <img
                 class="team__img"
-                src="images/teamcard4.jpg"
+                srcset="./images/team/ui_designer_450_m.jpg 450w, 
+                        ./images/team/ui_designer_900_m.jpg 900w, 
+                        ./images/team/ui_designer_354_t.jpg 354w, 
+                        ./images/team/ui_designer_708_t.jpg 708w,
+                        ./images/team/ui_designer_270_d.jpg 270w, 
+                        ./images/team/ui_designer_540_d.jpg 540w"
+                 sizes="(min-width: 1200px) 270px, 
+                        (min-width: 768px) 354px, 
+                        (min-width: 480px) 450px, 100vw"
+                src="./images/team/ui_designer_450_m.jpg"
                 alt="UI Designer"
-                width="270"
+                width="450"
               />
               <div class="team-profile">
                 <h3 class="team-profile__subtitle">Михайло Єрмаков</h3>

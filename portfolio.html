@@ -25,50 +25,68 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body class="body">
-    <!-- <header class="header">
-      <div class="container header__container">
+    <header class="header">
+      <nav class="header-nav">
         <a href="/" class="header__logo logo link" lang="en"
-          ><span class="header__accent--blue">Web</span
-          ><span class="header__accent--black">Studio</span></a
-        >
+        ><span class="header__accent--blue">Web</span
+        ><span class="header__accent--black">Studio</span></a
+      >
+        <!-- mobile menu -->
+       <!-- mobile menu -->
+       <button 
+       type="button" 
+       class="header__button--mobmenu is-open" 
+       aria-expanded="false"
+       aria-controls="menu__container" 
+       data-menu-button>
+         <svg width="24" height="16" aria-label="Переключатель мобільного меню">
+           <use class="header-nav__icon--open" href="./images/header/symbol-mob_menu.svg#icon-close_mob_menu"></use>
+           <use class="header-nav__icon--close" href="./images/header/symbol-mob_menu.svg#icon-mob_menu"></use>
+           </svg>
+       </button>
+       <div class="mobile-menu__container" id="menu__container" data-menu>
+      
+     <div class="navigation">
+        <ul class="header-nav__list items">
+         <li class="header-nav__item item">
+           <a class="header-nav__link link " href="./index.html"
+             >Студія</a
+           >
+         </li>
 
-        <nav class="header-nav">
-          <ul class="header-nav__list items">
-            <li class="header-nav__item item">
-              <a class="header-nav__link link " href="./index.html"
-                >Студія</a
-              >
-            </li>
+         <li class="header-nav__item item">
+           <a class="header-nav__link link header__current" href="./portfolio.html"
+             >Портфоліо</a
+           >
+         </li>
+         <li class="header-nav__item item">
+           <a class="header-nav__link link" href="#">Контракти</a>
+         </li>
+       </ul>
+     </div>
 
-            <li class="header-nav__item item">
-              <a class="header-nav__link link header__current" href="./portfolio.html"
-                >Портфоліо</a
-              >
-            </li>
-            <li class="header-nav__item item">
-              <a class="header-nav__link link" href="#">Контракти</a>
-            </li>
-          </ul>
-        </nav>
-
-        <ul class="header-list items">
-          <li class="header-list__contact">
-            <a class="header-list__mail link" href="mailto:ingo@devstudio.com"
-              ><svg class="header-list__icon--email contact-icon" width="16" height="12">
-                <use href="./images/icons.svg#icon-envelope"></use></svg
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="header-list__contact">
-            <a class="header-list__tel link" href="tel:+380961111111"
-              ><svg class="header-list__icon--smartphone contact-icon" width="10" height="16">
-                <use href="./images/icons.svg#icon-smartphone"></use></svg
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
-      </div>
-    </header> -->
+      <div class="contacts">
+      <ul class="header-list items">
+        
+        <li class="header-list__contact">
+          <a class="header-list__mail link" href="mailto:ingo@devstudio.com"
+            ><svg class="header-list__icon--email contact-icon" width="16" height="12">
+              <use href="./images/icons.svg#icon-envelope"></use></svg
+            >info@devstudio.com</a
+          >
+        </li>
+        <li class="header-list__contact">
+          <a class="header-list__tel link" href="tel:+380961111111"
+            ><svg class="header-list__icon--smartphone contact-icon" width="10" height="16">
+              <use href="./images/icons.svg#icon-smartphone"></use></svg
+            >+38 096 111 11 11</a
+          >
+        </li>
+      </ul>
+    </div>
+    </div>
+  </nav>
+</header>
 
     <main class="menu">
       <section class="menu__customers">
@@ -111,9 +129,18 @@
                 </p>   
                         
              <img class="exsamples__img"
-                  src="./images/technokryak.jpg"
+                  srcset="./images/menu/technokryak_1x_m.jpg 450w, 
+                          ./images/menu/technokryak_2x_m.jpg 900w, 
+                          ./images/menu/technokryak_1x_t.jpg 354w, 
+                          ./images/menu/technokryak_2x_t.jpg 708w,
+                          ./images/menu/technokryak_1x_d.jpg 370w, 
+                          ./images/menu/technokryak_2x_d.jpg 640w"  
+                  sizes="(min-width: 1200px) 270px, 
+                         (min-width: 768px) 354px, 
+                         (min-width: 480px) 450px, 100vw"
+                  src="./images/menu/technokryak_1x_m.jpg"
                   alt="Веб-сайт Технокряк"
-                  width="380" />               
+                  width="450" />               
                 </div>   
               <div class="exsamples__about">
                   <h2 class="exsamples__title">Технокряк</h2>
@@ -131,9 +158,18 @@
             
                   <img
                   class="exsamples__img"
-                  src="./images/new_orlean_vs_golden_star.jpg"
+                  srcset="./images/menu/NewOrlean_1x_m.jpg 450w, 
+                          ./images/menu/NewOrlean_2x_m.jpg 900w, 
+                          ./images/menu/NewOrlean_1x_t.jpg 354w, 
+                          ./images/menu/NewOrlean_2x_t.jpg 708w,
+                          ./images/menu/NewOrlean_1x_d.jpg 370w, 
+                          ./images/menu/NewOrlean_2x_d.jpg 640w"  
+                  sizes="(min-width: 1200px) 270px, 
+                         (min-width: 768px) 354px, 
+                         (min-width: 480px) 450px, 100vw"
+                  src="./images/menu/NewOrlean_1x_m.jpg"
                   alt="Постер New Orlean vs Golden Star"
-                  width="380"
+                  width="450"
                 /></div> 
                 <div class="exsamples__about">
                   <h2 class="exsamples__title">
@@ -153,9 +189,18 @@
             
                 <img
                   class="exsamples__img"
-                  src="./images/seafood.jpg"
+                  srcset="./images/menu/seafood_1x_m.jpg 450w, 
+                          ./images/menu/seafood_2x_m.jpg 900w, 
+                          ./images/menu/seafood_1x_t.jpg 354w, 
+                          ./images/menu/seafood_2x_t.jpg 708w,
+                          ./images/menu/seafood_1x_d.jpg 370w, 
+                          ./images/menu/seafood_2x_d.jpg 640w"  
+                  sizes="(min-width: 1200px) 270px, 
+                         (min-width: 768px) 354px, 
+                         (min-width: 480px) 450px, 100vw"
+                  src="./images/menu/seafood_1x_m.jpg"
                   alt="Додаток ресторану Seefood"
-                  width="380"
+                  width="450"
                 /></div> 
                 <div class="exsamples__about">
                   <h2 class="exsamples__title">Ресторан Seafood</h2>
@@ -173,9 +218,18 @@
             
                 <img
                   class="exsamples__img"
-                  src="./images/prime.jpg"
+                  srcset="./images/menu/Prime_1x_m.jpg 450w, 
+                          ./images/menu/Prime_2x_m.jpg 900w, 
+                          ./images/menu/Prime_1x_t.jpg 354w, 
+                          ./images/menu/Prime_2x_t.jpg 708w,
+                          ./images/menu/Prime_1x_d.jpg 370w, 
+                          ./images/menu/Prime_2x_d.jpg 640w"  
+                  sizes="(min-width: 1200px) 270px, 
+                         (min-width: 768px) 354px, 
+                         (min-width: 480px) 450px, 100vw"
+                  src="./images/menu/Prime_1x_m.jpg"
                   alt="Маркетинг для проєкту Prime"
-                  width="380"
+                  width="450"
                 />
               </div> 
                 <div class="exsamples__about">
@@ -193,9 +247,18 @@
             
                   <img
                   class="exsamples__img"
-                  src="./images/boxes.jpg"
+                  srcset="./images/menu/boxes_1x_m.jpg 450w, 
+                          ./images/menu/boxes_2x_m.jpg 900w, 
+                          ./images/menu/boxes_1x_t.jpg 354w, 
+                          ./images/menu/boxes_2x_t.jpg 708w,
+                          ./images/menu/boxes_1x_d.jpg 370w, 
+                          ./images/menu/boxes_2x_d.jpg 640w"  
+                  sizes="(min-width: 1200px) 270px, 
+                         (min-width: 768px) 354px, 
+                         (min-width: 480px) 450px, 100vw"
+                  src="./images/menu/boxes_1x_m.jpg"
                   alt="Додаток для проєкту Boxes"
-                  width="380"/>
+                  width="450"/>
                 </div> 
                   <div class="exsamples__about">
                   <h2 class="exsamples__title">Проєкт Boxes</h2>
@@ -212,9 +275,18 @@
            
               <img
                   class="exsamples__img"
-                  src="./images/inspiration_has_no_borders.jpg"
+                  srcset="./images/menu/InsBord_1x_m.jpg 450w, 
+                          ./images/menu/InsBord_2x_m.jpg 900w, 
+                          ./images/menu/InsBord_1x_t.jpg 354w, 
+                          ./images/menu/InsBord_2x_t.jpg 708w,
+                          ./images/menu/InsBord_1x_d.jpg 370w, 
+                          ./images/menu/InsBord_2x_d.jpg 640w"  
+                  sizes="(min-width: 1200px) 270px, 
+                         (min-width: 768px) 354px, 
+                         (min-width: 480px) 450px, 100vw"
+                  src="./images/menu/InsBord_1x_m.jpg"
                   alt="Веб-сайт Inspiration has no Borders"
-                  width="380"
+                  width="450"
                 />
               </div> 
                 <div class="exsamples__about">
@@ -233,9 +305,18 @@
             
             <img
                   class="exsamples__img"
-                  src="./images/limited_edition.jpg"
+                  srcset="./images/menu/le_1x_m.jpg 450w, 
+                          ./images/menu/le_2x_m.jpg 900w, 
+                          ./images/menu/le_1x_t.jpg 354w, 
+                          ./images/menu/le_2x_t.jpg 708w,
+                          ./images/menu/le_1x_d.jpg 370w, 
+                          ./images/menu/le_2x_d.jpg 640w"  
+                  sizes="(min-width: 1200px) 270px, 
+                         (min-width: 768px) 354px, 
+                         (min-width: 480px) 450px, 100vw"
+                  src="./images/menu/le_1x_m.jpg"
                   alt="Дизайн для видання Limited Edition"
-                  width="380"
+                  width="450"
                 />
               </div> 
                 <div class="exsamples__about">
@@ -254,9 +335,18 @@
            
                         <img
                   class="exsamples__img"
-                  src="images/lab.jpg"
+                  srcset="./images/menu/lab_1x_m.jpg 450w, 
+                          ./images/menu/lab_2x_m.jpg 900w, 
+                          ./images/menu/lab_1x_t.jpg 354w, 
+                          ./images/menu/lab_2x_t.jpg 708w,
+                          ./images/menu/lab_1x_d.jpg 370w, 
+                          ./images/menu/lab_2x_d.jpg 640w"  
+                  sizes="(min-width: 1200px) 270px, 
+                         (min-width: 768px) 354px, 
+                         (min-width: 480px) 450px, 100vw"
+                  src="/images/menu/lab_1x_m.jpg"
                   alt="Маркетинг для проєкту LAB"
-                  width="380"
+                  width="450"
                 />
               </div> 
                 <div class="exsamples__about">
@@ -274,9 +364,18 @@
            
                 <img
                   class="exsamples__img"
-                  src="./images/growing_business.jpg"
+                  srcset="./images/menu/GrowBusiness_1x_m.jpg 450w, 
+                          ./images/menu/GrowBusiness_2x_m.jpg 900w, 
+                          ./images/menu/GrowBusiness_1x_t.jpg 354w, 
+                          ./images/menu/GrowBusiness_2x_t.jpg 708w,
+                          ./images/menu/GrowBusiness_1x_d.jpg 370w, 
+                          ./images/menu/GrowBusiness_2x_d.jpg 640w"  
+                  sizes="(min-width: 1200px) 270px, 
+                         (min-width: 768px) 354px, 
+                         (min-width: 480px) 450px, 100vw"
+                  src="./images/menu/GrowBusiness_1x_m.jpg"
                   alt="Додаток Growing Business"
-                  width="380"
+                  width="450"
                 />
               </div> 
                 <div class="exsamples__about">
